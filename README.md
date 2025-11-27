@@ -8,18 +8,19 @@ To implement Stop and Wait protocol using NS2 program.
 2.	NS2 Software
 
 # ALGORITHM
-Step 1: Start the program.
-Step 2: Declare the global variables ns for creating a new simulator. Step 3: Open the network animator file in the write mode.
-Step 4: Open the trace file in the write mode. Step 5: Transfer the packets in network.
-Step 6: Create the capable no of nodes.
-Step 7: Create the duplex-link between the nodes including the delay time, bandwidth and dropping queue mechanism.
-Step 8: Set a tcp connection for source node. Step 9: Set the destination node using tcp sink.
-Step 10: Set the window size and the packet size for the tcp. Step 11: Set up the ftp over the tcp connection.
-Step 12: Define the plot window and finish procedure.
-Step 13: In the definition of the finish procedure declare the global variables. Step 14: Close the trace file and namfile and execute the network animation file. Step 15: At the particular time call the finish procedure.
+Step 1: Start the program.<br>
+Step 2: Declare the global variables ns for creating a new simulator.<br> Step 3: Open the network animator file in the write mode.<br>
+Step 4: Open the trace file in the write mode.<br> Step 5: Transfer the packets in network.<br>
+Step 6: Create the capable no of nodes.<br>
+Step 7: Create the duplex-link between the nodes including the delay time, bandwidth and dropping queue mechanism.<br>
+Step 8: Set a tcp connection for source node.<br> Step 9: Set the destination node using tcp sink.<br>
+Step 10: Set the window size and the packet size for the tcp. Step 11: Set up the ftp over the tcp connection.<br>
+Step 12: Define the plot window and finish procedure.<br>
+Step 13: In the definition of the finish procedure declare the global variables.<br> Step 14: Close the trace file and namfile and execute the network animation file.<br> Step 15: At the particular time call the finish procedure.<br>
 Step 16: Stop the program.
  
 # PROGRAM
+```
 set ns [new Simulator]
 set namfile [open out.nam w]
 $ns namtrace-all $namfile proc finish {}
@@ -67,16 +68,10 @@ $ns at 3.1 "$ns trace-annotate \"FTP stops\""
 $ns at 0.0 "$n0 label Sender"
 $ns at 0.0 "$n1 label Receiver"
 $ns run
+```
  
 # OUTPUT
-
-
-
-
-
-
-
-
+![514889336-f69755d2-6f11-4802-af86-3bbc680910fa](https://github.com/user-attachments/assets/c9b23e7e-1808-471d-9507-81b56d84171a)
 
 # RESULT
 Thus the Stop and Wait protocol is implemented using NS2 and the output is verified successfully.
